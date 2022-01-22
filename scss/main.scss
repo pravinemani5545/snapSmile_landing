@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'config';
+@import 'utility';
+
+//General Styles
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.2;
+    background: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: $dark-color;
+}
+
+ul {
+    list-style: none;
+}
+
+h1{
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 3.3rem;
+}
+
+img{
+    width: 100%;
+}
+
+input{
+    border: none;
+}
+
+
+
+#logo {
+    height: 40px;
+    width: 118px;
+    margin: 20px 0;
+    color: #fff;
+    text-transform: uppercase; 
+  }
+
+
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        padding: 1rem 1.2rem;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    a:hover{
+        color: $main-color;
+    }
+
+    a.current{
+        color: $main-color;
+    }
+
+}
+
+#header{
+    &-home{
+        .header-content{
+            background-color: $main-color;
+            text-align: center;
+            color: #fff;
+        
+            a{
+                color: #fff;
+                text-decoration: underline;
+            }
+        
+            h3{
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 15px 0;
+            }
+        }
+    }
+}
+
+#home{
+    &-a{
+        .home-container{
+            display: grid;
+            grid-template-columns: 5fr 5fr;
+
+            .phone-form{
+                
+                .text-input{
+                    width: 300px;
+                    padding: 1rem;
+                    border: 1px solid rgba(3,3,3,0.5);
+                    border-radius: 5px;
+    
+                }
+
+                button{
+                    font-family: inherit;
+                    display: block;
+                    margin: 20px 0;
+                    font-size: 1.3rem;
+                    font-weight: 800;
+                    padding: 1rem 2rem 1.2rem;
+                    border-radius: 3rem;
+                }
+
+                
+                h3{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: #333;
+                    margin: 15px 0;
+                }
+
+            }
+
+        }
+    }
+
+
+    &-b{
+
+        .featured-items{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 3rem;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+
+    }
+
+
+    &-c{
+        
+        h3{
+            margin: 20px 0 30px;
+            font-weight: 500;
+        }
+        .grid-steps{
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            margin: 20px 0;
+
+            .step{
+                display: grid;
+                grid-template-columns: 1fr 5fr;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+                gap: 2.5rem;
+
+                h2{
+                    color: $main-color;
+                }
+                p{
+                    margin-top: 10px;
+                }
+            }
+        }
+
+    }
+
+    &-d{
+        background-color: $tertiary-color;
+        color: #fff;
+        h1{
+            padding: 10px 0;
+        }
+    }
+    &-e{
+         h1{
+             margin-bottom: 1.2rem;
+         }
+         img{
+             margin-top: 1.4rem;
+         }
+    }
+    
+    &-f{
+
+        .quote-container{
+            display: grid;
+            grid-template-columns: 4fr 3fr;
+            color: white;
+
+            .text-wrapper{
+                align-self: center;
+            };;
+            
+            p:first-child{
+                font-size: 24px;
+            }
+
+            p:last-child{
+                margin-top: 70px;
+                font-size: 20px;
+            }
+            
+            img{
+                width: 70%;
+                margin-left: 5rem;
+            }
+        }
+
+        background-color: $tertiary-color;
+    }
+}
